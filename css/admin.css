@@ -1,0 +1,44 @@
+		 @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Sancreek&display=swap');
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: 'Rubik', sans-serif;
+		 background-image: url(https://img.freepik.com/fotos-premium/madera-oscura-textura-fondo-blanco-diseno_263512-3223.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+	}
+	form{
+		width: 80%;
+		margin: 7% auto;
+		padding: 5%;
+		background-color: #000000;
+		flex-direction: column;
+		border-radius: 20px;
+		text-align: center;
+	}
+	form input{
+		border: none;
+		border-radius: 20px;
+		width: 80%;
+		margin: 3% auto;
+		text-align: center;
+		font-size: 18px;
+	}
+	h1{
+		font-family: 'Sancreek',cursive;
+		color: #8f8f8f;
+	}
+	input[type="submit"] {
+ 	   border-radius: 15px;
+ 	   background-color: #8ED35B;
+ 	   color: #ffffff;
+ 	   width: 40%;
+ 	   font-weight: bold;
+ 	   border: none;
+ 	   font-size: 16px;
+ 	   margin-top: 3%;
+  	}
+  	input[type="submit"] {
+  		letter-spacing: 3px;
+  	}

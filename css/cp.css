@@ -1,0 +1,78 @@
+	 @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Sancreek&display=swap');
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: 'Rubik', sans-serif;
+		 background-image: url(https://img.freepik.com/fotos-premium/madera-oscura-textura-fondo-blanco-diseno_263512-3223.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+	}
+  @media (max-width: 425px){
+      form{
+        display: flex;
+        flex-direction: column;
+      }
+      input[type="submit"]{
+        width: 30%;
+        margin: auto;
+      }
+
+  }
+  @media (min-width: 768px) and (max-width: 2260){
+    form{
+        display: flex;
+        flex-direction: row;
+      }
+      input[type="submit"]{
+        width: 15%;
+      }
+  }
+	.contenedor{
+		background: #000000;
+		width: 90%;
+		color: #f2f2f2;
+		margin: 5% auto;
+		padding: 3%;
+		border-radius: 30px;
+		text-align: center;
+		align-items: center;
+		align-content: center;
+	}
+	.persona{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.divi{
+		margin: auto;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: space-between;
+	}
+	h3,h1{
+		font-family: 'Sancreek', cursive;
+	}
+	.contenedor a{
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 3px solid #D09B09;
+    color: #ffffff;
+  }
+  .contenedor a:hover{
+ border-bottom: 3px solid white;
+    letter-spacing: 2px;
+  }
+  input[type="submit"] {
+     background-color: #8ED35B;
+     color: #ffffff;
+     bottom: 20px;
+     font-weight: bold;
+     border: none;
+     font-size: 16px;
+     margin-top: 3%;
+    }
+    input[type="submit"] {
+      letter-spacing: 3px;
+    }

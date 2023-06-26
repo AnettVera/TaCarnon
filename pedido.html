@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css"> 
+	<title></title>
+</head>
+
+</style>
+<body>
+	<header>
+		 <div class="container-fluid">
+      <div class="navb-logo">
+        <img src="IMG/tacarnon.png" alt="Logo">
+      </div>
+
+      <div class="navb-items d-none d-xl-flex">
+        <div class="modal-line">
+          <i class="fa-solid fa-house"></i><a href="#">Inicio</a>
+        </div>
+
+        <div class="modal-line">
+          <i class="fa-solid fa-bell-concierge"></i><a href="index.html#menu">Menu</a>
+        </div>
+
+        <div class="modal-line">
+          <i class="fa-solid fa-file-lines"></i> <a href="pedido.html" class="btn-abrir" id="btn-abrir">Crear pedido</a>
+        </div>
+
+        <div class="modal-line">
+          <i class="fa-solid fa-circle-info"></i><a href="#somos">¿Quienes somos?</a>
+        </div>
+      </div>
+
+      <div class="mobile-toggler d-lg-none">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#navmodal"><i class="bi bi-list"></i></a>
+      </div>
+       <div class="modal fade" id="navmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="IMG/tacarnon.png" alt="Logo">
+              <button type="button" class="btn-close btn-light">
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="modal-line">
+                <a href="#"><i class="bi bi-house-door-fill"></i>Inicio</a>
+              </div>
+              <div class="modal-line">
+                <a href="#menu"><i class="bi bi-person-fill-gear"></i>Menu</a>
+              </div>
+              <div class="modal-line">
+                <a href="pedido.html" class="btn-abrir" id="btn-abrir"><i class="bi bi-person-heart"></i>Crear pedido</a>
+              </div>
+              <div class="modal-line">
+                <a href="#somos"><i class="bi bi-mortarboard-fill"></i>¿Quienes somos?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</header>
+	<form action="confirmar.html" method="get">
+		<h1>¡Hola haz tú pedido!</h1>
+		<div class="persona">
+		<input type="text" name="nombre" id="nombre" required placeholder="A quién va dirigida la orden">
+		<input type="text" name="numero" id="numero" required placeholder="777-000-0000">
+		<input type="text" name="direccion" id="direccion" required placeholder="Colonia calle numero casa/edificio...">
+		<input type="email" name="correo" id="correo" placeholder="cliente@gmail.com" required>
+		</div>
+		<h3>Comida</h3>
+		<div class="divi">
+  <label>
+    <input type="checkbox" name="" value="opcion1" onchange="toggleCantidad(this)">
+    Tacos al pastor
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+  <label>
+    <input type="checkbox" name="" value="opcion1" onchange="toggleCantidad(this)">
+    Tacos de cecina
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+  <label>
+    <input type="checkbox" name="opcion" value="opcion2" onchange="toggleCantidad(this)">
+    Tacos de bistec
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+  <label>
+    <input type="checkbox" name="opcion" value="opcion3" onchange="toggleCantidad(this)">
+    Tacos de barbacoa
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+  <label>
+    <input type="checkbox" name="opcion" value="opcion4" onchange="toggleCantidad(this)">
+    Alambre de pollo
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+   <label>
+    <input type="checkbox" name="opcion" value="opcion4" onchange="toggleCantidad(this)">
+    Alambre clásico
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+   <label>
+    <input type="checkbox" name="opcion" value="opcion4" onchange="toggleCantidad(this)">
+    Consome
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+   <label>
+    <input type="checkbox" name="opcion" value="opcion4" onchange="toggleCantidad(this)">
+    Birria
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+   <label>
+    <input type="checkbox" name="opcion" value="opcion4" onchange="toggleCantidad(this)">
+    Quesabirria
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+</div>
+
+<h3>Bebida</h3>
+<div class="divi">
+  
+  <label>
+    <input type="checkbox" name="" value="opcion1" onchange="toggleCantidad(this)">
+    Agua de sabor
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+  <label>
+    <input type="checkbox" name="opcion" value="opcion2" onchange="toggleCantidad(this)">
+    Refresco de 600ml
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+  <label>
+    <input type="checkbox" name="opcion" value="opcion3" onchange="toggleCantidad(this)">
+    Chamoyada
+    <input type="number" name="cantidad" min="1" max="100" disabled>
+  </label>
+  
+  </div>
+  <input type="submit" value="Enviar">
+</form>
+
+<script>
+  function toggleCantidad(checkbox) {
+    const cantidadInput = checkbox.nextElementSibling;
+    cantidadInput.disabled = !checkbox.checked;
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #000000;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+  display: flex;
+  align-items: center;
+}
+
+header .container-fluid {
+  width: 100%;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media(max-width:992px) {
+  header .container-fluid {
+    padding: 0 5%;
+  }
+  header .navb-logo img {
+  width: 75px;
+  height: 75px;
+  }
+}
+
+header .navb-logo img {
+  width: 90px;
+  height: 90px;
+}
+header .modal-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  letter-spacing: 3px;
+}
+
+header .modal-line a {
+  transition: all .1s ease;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 5px;
+  color: #f8f8f8;
+  margin-left: 20px;
+}
+
+header .modal-line a:hover {
+  color: #f2f2f2;
+  background: #9D0B09;
+  font-weight: 500;
+}
+
+header .items {
+  text-align: center;
+  margin-inline: 15%;
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding: 5px 0;
+  transition: all .1s ease;
+  cursor: pointer;
+}
+
+
+header .items:hover {
+  transform: scale(1.2);
+  color: #001256;
+}
+
+/* modal */
+
+.mobile-toggler i{
+    color: #f2f2f2;
+    font-size: 30px;
+}
+
+.modal-dialog {
+  margin: 0;
+  width: 430px;
+}
+
+@media(max-width: 450px) {
+  .modal-dialog {
+    width: 82%;
+  }
+}
+
+.modal-content {
+  border-radius: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #000000;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88%;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fefefe;
+}
+
+.modal-header img {
+  width: 80px;
+  height: 80px;
+  margin-top: 17.5px;
+}
+
+.modal-header .btn-close {
+  background: transparent;
+  opacity: 1;
+}
+
+.modal-header i {
+  color: #fefefe;
+  font-size: 30px;
+}
+
+.modal-body {
+  width: 88%;
+  margin: 0 auto;
+  padding: 75px 0 0 0;
+  flex: unset;
+}
+
+.modal-body .modal-line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all .5s ease;
+  color: #274d8a;
+  border-bottom: 1px solid #ffffff;
+}
+
+.modal-body .modal-line:hover {
+  color: #fefefe;
+  border-bottom: 1px solid #fefefe;
+}
+
+.modal-body .modal-line a {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  color: #fefefe;
+}
+
+.modal-body .modal-line i {
+  color: #ffffff;
+  font-size: 30px;
+  width: 35px;
+  margin-right: 15px;
+  padding: 0 0 3px 3px;
+}

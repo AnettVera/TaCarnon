@@ -1,0 +1,154 @@
+
+   @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Sancreek&display=swap');
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+     background-image: url(https://img.freepik.com/fotos-premium/madera-oscura-textura-fondo-blanco-diseno_263512-3223.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+  form{
+    background: #000000;
+    width: 90%;
+    color: #f2f2f2;
+    margin: 5% auto;
+    padding: 3%;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+  .persona{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .persona input{
+    margin: 3%;
+    border: none;
+      background-color: ;
+      color: #8f8f8f;
+      border-radius: 20px;
+      height: 40px;
+      text-align: center;
+  }
+  .persona input:hover{
+        border-bottom-color: #9D0B09;
+        border: none;
+        color: green;
+  }
+  input:focus{
+    outline: none;
+    background: #8ED35B;
+    color: #ffffff;
+  }
+  .divi label{
+    margin-top: 10px;
+    text-align: left;
+  }
+  .divi{
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+  h3,h1{
+    font-family: 'Sancreek', cursive;
+  }
+  input[type="submit"] {
+     border-radius: 15px;
+     background-color: #8ED35B;
+     color: #ffffff;
+     width: 40%;
+     font-weight: bold;
+     border: none;
+     font-size: 16px;
+     margin-top: 3%;
+    }
+    input[type="submit"] {
+      letter-spacing: 3px;
+    }
+  
+  
+  /* Estilo para las cajas de verificación */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+/* Estilo para las cajas de verificación cuando están marcadas */
+input[type="checkbox"]:checked {
+  background-color: green;
+}
+
+/* Estilo para la palomita */
+input[type="checkbox"]::before {
+  content: "\2713"; /* Caracter unicode de la palomita */
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilo para ocultar la palomita cuando no está seleccionada */
+input[type="checkbox"]:not(:checked)::before {
+  content: "";
+}
+
+ @media (max-width: 425px){
+      form{
+        display: flex;
+        flex-direction: column;
+      }
+      input[type="submit"]{
+        width: 30%;
+        margin: auto;
+      }
+      .persona{
+        flex-direction: column;
+      }
+      .persona input{
+        width: 95%;
+      }
+      .divi{
+        flex-direction: column;
+      }
+      .divi label{
+        width: 80%;
+      }
+
+  }
+  @media (min-width: 768px) and (max-width: 2260){
+    form{
+       
+      }
+      input[type="submit"]{
+        width: 15%;
+      }
+      .persona{
+        flex-direction: row;
+      }
+      .persona input{
+        width: 45%;
+        justify-content: space-between;
+      }
+      .divi{
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .divi label{
+        width: 30%;
+      }
+  }
